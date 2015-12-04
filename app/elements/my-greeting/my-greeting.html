@@ -6,10 +6,9 @@ The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
 The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
-<link rel="import" href="../../bower_components/polymer/polymer.html">
+--><html><head><link rel="import" href="../../bower_components/polymer/polymer.html">
 
-<dom-module id="my-greeting">
+</head><body><dom-module id="my-greeting">
   <template>
     <style include="shared-styles"></style>
     <style>
@@ -23,22 +22,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <input class="paper-font-body2" value="{{greeting::input}}">
   </template>
 
-  <script>
-    (function() {
-      'use strict';
-      
-      Polymer({
-        is: 'my-greeting',
-
-        properties: {
-          greeting: {
-            type: String,
-            value: 'Welcome!',
-            notify: true
-          }
-        }
-      });
-    })();
-  </script>
+  <script src="my-greeting.html.0.js"></script>
 
 </dom-module>
+</body></html>
