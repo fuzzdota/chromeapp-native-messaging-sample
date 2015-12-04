@@ -1,0 +1,21 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/SamNgo/Desktop/GitProjects/chromeapp-native-golang"
+		}
+	],
+  "settings": {
+    "golang": {
+      "osx": {
+        "PATH": "/Users/SamNgo/Desktop/GitProjects/chromeapp-native-golang/native/bin",
+        "GOPATH": "/Users/SamNgo/Desktop/GitProjects/chromeapp-native-golang/native"
+      }
+    },
+    "GoSublime": {
+      "env": {
+        "GOPATH": "/Users/SamNgo/Desktop/GitProjects/chromeapp-native-golang/native:$GS_GOPATH"
+      }
+    }
+  }
+}
