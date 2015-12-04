@@ -1,0 +1,1 @@
+WCT = <%= JSON.stringify(clientOptions) %>;

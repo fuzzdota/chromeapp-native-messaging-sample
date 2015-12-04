@@ -1,0 +1,8 @@
+
+
+  Polymer({
+
+    is: 'test-element'
+
+  });
+
