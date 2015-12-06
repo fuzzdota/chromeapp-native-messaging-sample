@@ -3,4 +3,6 @@ dist
 /bower_components
 .tmp
 *.sublime-workspace
+*.sublime-project
 **/.DS_Store
+**/bin
