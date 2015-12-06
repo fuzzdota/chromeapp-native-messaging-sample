@@ -1,0 +1,46 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../bower_components/paper-input/paper-textarea.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/paper-styles/paper-styles-classes.html">
+<link rel="import" href="../../bower_components/paper-styles/color.html">
+<link rel="import" href="../../bower_components/paper-toast/paper-toast.html">
+<dom-module id="native-sample">
+  <template>
+    <style>
+    :host {
+      display: block;
+      padding: 16px;
+    }
+    
+    div > *:not(:last-child) {
+      margin-right: 16px;
+    }
+    
+    paper-button {
+      width: 150px;
+      background-color: var(--paper-red-400);
+      color: var(--paper-grey-50);
+    }
+    
+    paper-textarea {
+      border-top: 1px solid var(--paper-grey-400);
+      border-radius: 5px;
+      margin-top: 32px;
+    }
+    </style>
+    <paper-input label="Message to send" value="{{message}}"></paper-input>
+    <div class="horizontal layout around-justified">
+      <paper-button raised on-tap="_connect">Connect</paper-button>
+      <paper-button raised on-tap="_disconnect">Disconnect</paper-button>
+      <paper-button raised on-tap="_send">Send</paper-button>
+    </div>
+    <paper-textarea rows="10" label="Program will echo back message unless you send &#34;
+Hi&#34;" max-rows="10" readonly value="{{responses}}"></paper-textarea>
+    <div class="horizontal layout around-justified">
+      <paper-button raised on-tap="_clear">Clear</paper-button>
+    </div>
+    <paper-toast id="toast"></paper-toast>
+  </template>
+  <script src="native-sample.js"></script>
+</dom-module>

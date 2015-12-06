@@ -1,3 +1,4 @@
+<!doctype html>
 <!--
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
@@ -6,23 +7,20 @@ The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
 The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
---><html><head><link rel="import" href="../../bower_components/polymer/polymer.html">
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>native-sample Demo</title>
+    <script src="../../../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../native-sample.html">
+  </head>
+  <body>
 
-</head><body><dom-module id="my-list">
-  <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <ul>
-      <template is="dom-repeat" items="{{items}}">
-        <li><span class="paper-font-body1">{{item}}</span></li>
-      </template>
-    </ul>
-  </template>
+    <p>An example of <code>&lt;native-sample&gt;</code>:</p>
 
-  <script src="my-list.html.0.js"></script>
+    <native-sample></native-sample>
 
-</dom-module>
-</body></html>
+  </body>
+</html>
